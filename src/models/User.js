@@ -13,7 +13,7 @@ const userSchema = new Schema(
     },
     password: {
       type: String,
-      unique: true,
+      required: true,
     },
     roles: [
       {
@@ -30,7 +30,7 @@ const userSchema = new Schema(
 );
 
 userSchema.statics.encryptPassword = async (password) => {
-  const salt = bcrypt.getSalt(10);
+  const salt = bcrypt.genSaltSync(10);
   return await bcrypt.hash(password, salt);
 };
 userSchema.statics.comparePassword = async (password, receivedPassword) => {
