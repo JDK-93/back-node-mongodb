@@ -1,7 +1,7 @@
 import Role from "../models/Role";
 
 // Esto es un archivo de configuración inicial.
-// Si es la primera vez que ejecuto el programa, se ejecuta, sinó, no
+// Si es la primera vez que ejecuto el programa, se ejecuta, sinó, no.
 
 export const createRoles = async () => {
   try {

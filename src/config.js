@@ -1,3 +1,3 @@
 export default {
-    SECRET:'Estoesunsecretazo'
-}
+  SECRET: "Estoesunsecretazo",
+};
